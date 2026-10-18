@@ -8,6 +8,8 @@ Team project developed during my internship at the **National Institute for Rese
 
 ## Features
 
+
+
 - **User accounts**: registration and login with JWT authentication (access and refresh tokens).
 - **ECG data API**: the back end reads ECG recordings from CSV files with pandas, cleans invalid rows and serves them as JSON. Large files are processed in chunks.
 - **CSV upload**: an endpoint for uploading a new ECG recording.
@@ -37,7 +39,7 @@ I was responsible for **testing the back end**: running the full application loc
 
 ## Project timeline
 
-![Project timeline](docs/project-timeline.png)
+   ![ECG chart](docs/Screenshot1.png)
 
 ---
 
