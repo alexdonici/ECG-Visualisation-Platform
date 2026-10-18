@@ -74,6 +74,15 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+#### Create a user
+The app has no default account. Create one with:
+
+```bash
+python manage.py createsuperuser
+```
+
+or send a POST request to `/api/register/` with `username`, `password` and `email`.
+Then log in on the front end with these credentials.
 
 The API runs at `http://localhost:8000/api/`.
 Optional environment variables: `DJANGO_SECRET_KEY`, `DJANGO_DEBUG`.
