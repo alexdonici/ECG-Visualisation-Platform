@@ -8,7 +8,7 @@ const Login = () => {
     <div className="login-page">
       <div className="left-panel">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+         Bine ați venit! Vă rugăm să vă autentificați pentru a vizualiza conținutul.
         </p>
       </div>
       <div className="right-panel">
