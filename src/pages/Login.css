@@ -1,0 +1,25 @@
+/* src/pages/Login.css */
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .right-panel {
+    flex: 1;
+    background-color: #b22222; /* roșu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asigură că ocupă toată înălțimea */
+  }
+  

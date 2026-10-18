@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* index.css */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: #f0f0f0;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+body.dark .login-card {
+  background: #1e1e1e;
+}
+
+.ekg-wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+body.dark .ekg-wrapper {
+  background-color: #1c1c1c;
+}
+
+canvas {
+  background-color: transparent !important;
+}

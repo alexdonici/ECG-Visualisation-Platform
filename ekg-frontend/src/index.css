@@ -1,0 +1,112 @@
+:root {
+  --bg-main: #ffffff;
+  --text-main: #000000;
+  --bg-right: #b02e2e;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #000000;
+  --button-bg: #007bff;
+  --button-color: #ffffff;
+}
+
+body.dark {
+  --bg-main: #1a1a1a;
+  --text-main: #f1f1f1;
+  --bg-right: #7a2222;
+  --card-bg: #2a2a2a;
+  --input-bg: #333333;
+  --input-border: #dddddd;
+  --button-bg: #0d6efd;
+  --button-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left p {
+  max-width: 600px;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.right {
+  flex: 1;
+  background-color: var(--bg-right);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-main);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background-color: #0056b3;
+}
